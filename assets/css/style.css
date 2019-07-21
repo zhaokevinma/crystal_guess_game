@@ -1,0 +1,60 @@
+body {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+}
+
+#game {
+    width: 960px;
+    height: 1920px;
+    margin: 10px auto;
+}
+
+#goalNumber {
+    background-color: yellowgreen;
+    width: 480px;
+    height: 240px;
+    line-height: 240px;
+    font-size: 48px;
+    float: left;
+}
+
+#currentNumber {
+    background-color: yellow;
+    width: 480px;
+    height: 240px;
+    line-height: 240px;
+    font-size: 48px;
+    float: right;
+}
+
+#wins {
+    background-color:lightblue;
+    width: 480px;
+    height: 120px;
+    line-height: 120px;
+    font-size: 36px;
+    float: left;
+}
+
+#losses {
+    background-color: rosybrown;
+    width: 480px;
+    height: 120px;
+    line-height: 120px;
+    font-size: 36px;
+    float: left;
+}
+
+#crystals {
+    clear: both;
+    width: 900px;
+    margin: 0 30px;
+    padding-top: 50px;
+    height: 300px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin: 10px 10px;
+}
