@@ -23,34 +23,92 @@ $('#losses').html("<div>Losses: " + losses + "</div>");
 $('#purpleCrystal').on('click', function(){
     currentNumber += purpleNumber;
     $('#currentNumber').html("<div>Current Number: " + currentNumber + "</div>");
+    if (currentNumber > goalNumber) {
+        losses++;
+        $('#losses').html("<div>Losses: " + losses + "</div>");
+        currentNumber = 0;
+        $('#currentNumber').html("<div>Current Number: " + currentNumber + "</div>");
+        goalNumber = Math.floor(Math.random()*(120-19+1)+19);
+        $('#goalNumber').html("<div>Goal Number: " + goalNumber + "</div>");
+    }
+    
+    else if (currentNumber == goalNumber) {
+        wins++;
+        $('#wins').html("<div>Wins: " + wins + "</div>");
+        currentNumber = 0;
+        $('#currentNumber').html("<div>Current Number: " + currentNumber + "</div>");
+        goalNumber = Math.floor(Math.random()*(120-19+1)+19);
+        $('#goalNumber').html("<div>Goal Number: " + goalNumber + "</div>");
+    }
 })
 
 $('#redCrystal').on('click', function(){
     currentNumber += redNumber;
     $('#currentNumber').html("<div>Current Number: " + currentNumber + "</div>");
+    if (currentNumber > goalNumber) {
+        losses++;
+        $('#losses').html("<div>Losses: " + losses + "</div>");
+        currentNumber = 0;
+        $('#currentNumber').html("<div>Current Number: " + currentNumber + "</div>");
+        goalNumber = Math.floor(Math.random()*(120-19+1)+19);
+        $('#goalNumber').html("<div>Goal Number: " + goalNumber + "</div>");
+    }
+    
+    else if (currentNumber == goalNumber) {
+        wins++;
+        $('#wins').html("<div>Wins: " + wins + "</div>");
+        currentNumber = 0;
+        $('#currentNumber').html("<div>Current Number: " + currentNumber + "</div>");
+        goalNumber = Math.floor(Math.random()*(120-19+1)+19);
+        $('#goalNumber').html("<div>Goal Number: " + goalNumber + "</div>");
+    }
 })
 
 $('#orangeCrystal').on('click', function(){
     currentNumber += orangeNumber;
     $('#currentNumber').html("<div>Current Number: " + currentNumber + "</div>");
+    if (currentNumber > goalNumber) {
+        losses++;
+        $('#losses').html("<div>Losses: " + losses + "</div>");
+        currentNumber = 0;
+        $('#currentNumber').html("<div>Current Number: " + currentNumber + "</div>");
+        goalNumber = Math.floor(Math.random()*(120-19+1)+19);
+        $('#goalNumber').html("<div>Goal Number: " + goalNumber + "</div>");
+    }
+    
+    else if (currentNumber == goalNumber) {
+        wins++;
+        $('#wins').html("<div>Wins: " + wins + "</div>");
+        currentNumber = 0;
+        $('#currentNumber').html("<div>Current Number: " + currentNumber + "</div>");
+        goalNumber = Math.floor(Math.random()*(120-19+1)+19);
+        $('#goalNumber').html("<div>Goal Number: " + goalNumber + "</div>");
+    }
 })
 
 $('#blueCrystal').on('click', function(){
     currentNumber += blueNumber;
     $('#currentNumber').html("<div>Current Number: " + currentNumber + "</div>");
+    if (currentNumber > goalNumber) {
+        losses++;
+        $('#losses').html("<div>Losses: " + losses + "</div>");
+        currentNumber = 0;
+        $('#currentNumber').html("<div>Current Number: " + currentNumber + "</div>");
+        goalNumber = Math.floor(Math.random()*(120-19+1)+19);
+        $('#goalNumber').html("<div>Goal Number: " + goalNumber + "</div>");
+    }
+    
+    else if (currentNumber == goalNumber) {
+        wins++;
+        $('#wins').html("<div>Wins: " + wins + "</div>");
+        currentNumber = 0;
+        $('#currentNumber').html("<div>Current Number: " + currentNumber + "</div>");
+        goalNumber = Math.floor(Math.random()*(120-19+1)+19);
+        $('#goalNumber').html("<div>Goal Number: " + goalNumber + "</div>");
+    }
 })
 
-if (currentNumber > goalNumber) {
-    losses--;
-    $('#losses').html("<div>Losses: " + losses + "</div>");
-    currentNumber = 0;
-}
 
-else if (currentNumber == goalNumber) {
-    wins--;
-    $('#wins').html("<div>Wins: " + wins + "</div>");
-    currentNumber = 0;
-}
 
 
 
