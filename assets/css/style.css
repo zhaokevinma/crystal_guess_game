@@ -9,6 +9,13 @@ body {
     margin: 10px auto;
 }
 
+#info {
+    background-color: blanchedalmond;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+}
+
 #goalNumber {
     background-color: yellowgreen;
     width: 480px;
